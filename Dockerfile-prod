@@ -1,0 +1,7 @@
+FROM openjdk:11-jre-slim
+
+WORKDIR /opt/hacker-rank-problems
+
+ADD target/universal/hacker-rank-problems-*.tgz .
+
+CMD [ "/opt/hacker-rank-problems/bin/hacker-rank-problems" ]
