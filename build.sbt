@@ -21,6 +21,6 @@ lazy val rootDependencies =
   Seq()
 
 lazy val rootTestDependencies =
-  Seq(scalaTest, pegdown)
+  Seq(scalaTest, pegdown, junitJupiterApi)
 
 addCommandAlias("testWithCoverage", "; coverage; test; coverageReport")
